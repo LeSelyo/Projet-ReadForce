@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: cbfe36cfddfde964d9dfce63a355d5dd
+  - enabled: 1
+    path: Assets/Scenes/MapSelect.unity
+    guid: c2034909eab5c3a4f91e85efabd98e6c
+  - enabled: 0
+    path: Assets/Scenes/MapMaker.unity
+    guid: 0f705373b75a48c4a93647d704a4eabc
+  - enabled: 1
+    path: Assets/Scenes/TapTapAim.unity
+    guid: 4fd84d1e8ab02b14bb23158dc7af26e0
+  - enabled: 1
+    path: Assets/Scenes/multijoueurs.unity
+    guid: dc8e8e149eb287344b35f1f1b866fb4b
+  - enabled: 1
+    path: Assets/Scenes/LobbyMultijoueurs.unity
+    guid: 5c2d277e46d8a144186ca0399a4c6742
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 143456383abbe1747b3f6cf80f8d6f26,
+      type: 2}

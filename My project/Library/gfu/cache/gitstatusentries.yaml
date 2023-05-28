@@ -1,0 +1,348 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 6
+  lastUpdatedAtString: 2023-05-28T02:17:02.903+02:00
+  initializedAtString: 2023-05-28T02:16:49.565+02:00
+  entries:
+  - path: My project\Assets\Scenes\TapTapAim\hit.wav
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Assets\Scenes\TapTapAim\hit.wav
+    projectPath: Assets\Scenes\TapTapAim\hit.wav
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Assets\Scenes\TapTapAim\hit.wav.meta
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Assets\Scenes\TapTapAim\hit.wav.meta
+    projectPath: Assets\Scenes\TapTapAim\hit.wav.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\ArtifactDB
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\ArtifactDB
+    projectPath: Library\ArtifactDB
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\Artifacts\06\06949b24b8b6060c74b487c601b859ef
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\06\06949b24b8b6060c74b487c601b859ef
+    projectPath: Library\Artifacts\06\06949b24b8b6060c74b487c601b859ef
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\20\20877ee39d0511f8b6c41d41b0353901
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\20\20877ee39d0511f8b6c41d41b0353901
+    projectPath: Library\Artifacts\20\20877ee39d0511f8b6c41d41b0353901
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\2c\2c89b1980304c7bf543c7059052dd0e2
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\2c\2c89b1980304c7bf543c7059052dd0e2
+    projectPath: Library\Artifacts\2c\2c89b1980304c7bf543c7059052dd0e2
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\31\3138803fdf3365e793b8ae05a27affcf
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\31\3138803fdf3365e793b8ae05a27affcf
+    projectPath: Library\Artifacts\31\3138803fdf3365e793b8ae05a27affcf
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\46\46fe20493c274839a7c11f8d0b6f89a2
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\46\46fe20493c274839a7c11f8d0b6f89a2
+    projectPath: Library\Artifacts\46\46fe20493c274839a7c11f8d0b6f89a2
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\47\47429ba675ed8d9d5d03c2483ecfffd1
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\47\47429ba675ed8d9d5d03c2483ecfffd1
+    projectPath: Library\Artifacts\47\47429ba675ed8d9d5d03c2483ecfffd1
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\53\53d1c4976b4a9c049aaa95fdecfa3229
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\53\53d1c4976b4a9c049aaa95fdecfa3229
+    projectPath: Library\Artifacts\53\53d1c4976b4a9c049aaa95fdecfa3229
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\65\65d61453c8fb0ef299ab1fe666d360d7
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\65\65d61453c8fb0ef299ab1fe666d360d7
+    projectPath: Library\Artifacts\65\65d61453c8fb0ef299ab1fe666d360d7
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\74\740cdb20b77dbbc6b84f60e27d10eef7
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\74\740cdb20b77dbbc6b84f60e27d10eef7
+    projectPath: Library\Artifacts\74\740cdb20b77dbbc6b84f60e27d10eef7
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\7e\7e67851a3593fd56aa37cb2d6553bf01
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\7e\7e67851a3593fd56aa37cb2d6553bf01
+    projectPath: Library\Artifacts\7e\7e67851a3593fd56aa37cb2d6553bf01
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\81\811121745bb8fa45866bfaa0a6617f7f
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\81\811121745bb8fa45866bfaa0a6617f7f
+    projectPath: Library\Artifacts\81\811121745bb8fa45866bfaa0a6617f7f
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\86\8657e9a870f7262b620422693d4bb215
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\86\8657e9a870f7262b620422693d4bb215
+    projectPath: Library\Artifacts\86\8657e9a870f7262b620422693d4bb215
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\87\87a294542b130030c0e2e0f37e12c449
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\87\87a294542b130030c0e2e0f37e12c449
+    projectPath: Library\Artifacts\87\87a294542b130030c0e2e0f37e12c449
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\94\94a8b71b0b9429bdb54c7f4fa9f3dbf6
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\94\94a8b71b0b9429bdb54c7f4fa9f3dbf6
+    projectPath: Library\Artifacts\94\94a8b71b0b9429bdb54c7f4fa9f3dbf6
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\9b\9b6f1b27426c7a0583498bf71a4fdc8f
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\9b\9b6f1b27426c7a0583498bf71a4fdc8f
+    projectPath: Library\Artifacts\9b\9b6f1b27426c7a0583498bf71a4fdc8f
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\ac\ace6499303215e41e27bf0488c41c859
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\ac\ace6499303215e41e27bf0488c41c859
+    projectPath: Library\Artifacts\ac\ace6499303215e41e27bf0488c41c859
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\b4\b400122f476c0bb7da6b7a4cf4ff2f06
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\b4\b400122f476c0bb7da6b7a4cf4ff2f06
+    projectPath: Library\Artifacts\b4\b400122f476c0bb7da6b7a4cf4ff2f06
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\ba\bae6abde260540f4d23c8d0a50b3151f
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\ba\bae6abde260540f4d23c8d0a50b3151f
+    projectPath: Library\Artifacts\ba\bae6abde260540f4d23c8d0a50b3151f
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\bb\bb6f81a494209a19492df23b10be1a55
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\bb\bb6f81a494209a19492df23b10be1a55
+    projectPath: Library\Artifacts\bb\bb6f81a494209a19492df23b10be1a55
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\c0\c00ad3971a4980a7d2e4c432d74af829
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\c0\c00ad3971a4980a7d2e4c432d74af829
+    projectPath: Library\Artifacts\c0\c00ad3971a4980a7d2e4c432d74af829
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\cf\cf31a3a193b8b20a8f3d49a26d53d895
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\cf\cf31a3a193b8b20a8f3d49a26d53d895
+    projectPath: Library\Artifacts\cf\cf31a3a193b8b20a8f3d49a26d53d895
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\ed\ed034752a8976162a2cd3d13b59f3a28
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\ed\ed034752a8976162a2cd3d13b59f3a28
+    projectPath: Library\Artifacts\ed\ed034752a8976162a2cd3d13b59f3a28
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\f2\f2f3d7f685b5a40cc9a653d6584f5903
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\f2\f2f3d7f685b5a40cc9a653d6584f5903
+    projectPath: Library\Artifacts\f2\f2f3d7f685b5a40cc9a653d6584f5903
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Artifacts\f6\f6e0a743af2b53eb48e53ff98088aabd
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Artifacts\f6\f6e0a743af2b53eb48e53ff98088aabd
+    projectPath: Library\Artifacts\f6\f6e0a743af2b53eb48e53ff98088aabd
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Library\Bee\backend_profiler0.traceevents
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Bee\backend_profiler0.traceevents
+    projectPath: Library\Bee\backend_profiler0.traceevents
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\Bee\fullprofile.json
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Bee\fullprofile.json
+    projectPath: Library\Bee\fullprofile.json
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\Bee\tundra.digestcache
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Bee\tundra.digestcache
+    projectPath: Library\Bee\tundra.digestcache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\Bee\tundra.log.json
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Bee\tundra.log.json
+    projectPath: Library\Bee\tundra.log.json
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\Bee\TundraBuildState.state
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Bee\TundraBuildState.state
+    projectPath: Library\Bee\TundraBuildState.state
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\Bee\TundraBuildState.state.map
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Bee\TundraBuildState.state.map
+    projectPath: Library\Bee\TundraBuildState.state.map
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\com.unity.addressables\AddressablesBuildTEP.json
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\com.unity.addressables\AddressablesBuildTEP.json
+    projectPath: Library\com.unity.addressables\AddressablesBuildTEP.json
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\EditorInstance.json
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\EditorInstance.json
+    projectPath: Library\EditorInstance.json
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: My project\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\Search\transactions.db
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\Search\transactions.db
+    projectPath: Library\Search\transactions.db
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\SourceAssetDB
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\SourceAssetDB
+    projectPath: Library\SourceAssetDB
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Library\StateCache\MainStageHierarchy\4d\4d2a36d9faf65734f0bbefb3ee623532.json
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Library\StateCache\MainStageHierarchy\4d\4d2a36d9faf65734f0bbefb3ee623532.json
+    projectPath: Library\StateCache\MainStageHierarchy\4d\4d2a36d9faf65734f0bbefb3ee623532.json
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Logs\AssetImportWorker0.log
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Logs\AssetImportWorker0.log
+    projectPath: Logs\AssetImportWorker0.log
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Logs\AssetImportWorker0-prev.log
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Logs\AssetImportWorker0-prev.log
+    projectPath: Logs\AssetImportWorker0-prev.log
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: My project\Logs\AssetImportWorker1.log
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Logs\AssetImportWorker1.log
+    projectPath: Logs\AssetImportWorker1.log
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Logs\AssetImportWorker1-prev.log
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Logs\AssetImportWorker1-prev.log
+    projectPath: Logs\AssetImportWorker1-prev.log
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: My project\Logs\shadercompiler-AssetImportWorker0.log
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Logs\shadercompiler-AssetImportWorker0.log
+    projectPath: Logs\shadercompiler-AssetImportWorker0.log
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: My project\Logs\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Logs\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: My project\Temp\__Backupscenes\0.backup
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Temp\__Backupscenes\0.backup
+    projectPath: Temp\__Backupscenes\0.backup
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: My project\Temp\FSTimeGet-a64a4a18374515e4a8368dde7f5d93a1
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Temp\FSTimeGet-a64a4a18374515e4a8368dde7f5d93a1
+    projectPath: Temp\FSTimeGet-a64a4a18374515e4a8368dde7f5d93a1
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: My project\Temp\ProcessJobs\b8613a84801a46c691ba1681b66ddf56.layout
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Temp\ProcessJobs\b8613a84801a46c691ba1681b66ddf56.layout
+    projectPath: Temp\ProcessJobs\b8613a84801a46c691ba1681b66ddf56.layout
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: My project\Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
+    projectPath: Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: My project\Temp\UnityLockfile
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Temp\UnityLockfile
+    projectPath: Temp\UnityLockfile
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: My project\Temp\workerlic
+    fullPath: C:\Users\celio\OneDrive\Documents\Github\Projet-ReadForce\My project\Temp\workerlic
+    projectPath: Temp\workerlic
+    originalPath: 
+    status: 1
+    staged: 0
