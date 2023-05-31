@@ -13,17 +13,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2023-04-21T03:51:31.642+02:00
-  initializedAtString: 2023-04-21T01:29:56.704+02:00
+  lastUpdatedAtString: 2023-05-31T05:00:53.755+02:00
+  initializedAtString: 2023-05-31T04:01:58.517+02:00
   localBranches:
   - name: main
     tracking: origin/main
   remoteBranches:
   - name: origin/HEAD
     tracking: '[None]'
+  - name: origin/main
+    tracking: '[None]'
   remotes:
   - name: origin
-    url: git@github.com:LeSelyo/Projet-ReadForce.git
+    url: https://github.com/LeSelyo/Projet-ReadForce.git
     login: 
     user: 
     host: 
@@ -36,7 +38,7 @@ MonoBehaviour:
     - name: main
       remote:
         name: origin
-        url: git@github.com:LeSelyo/Projet-ReadForce.git
+        url: https://github.com/LeSelyo/Projet-ReadForce.git
       trackingBranch: main
   remoteConfigBranches:
     keys:
@@ -44,16 +46,22 @@ MonoBehaviour:
     subKeys:
     - Values:
       - HEAD
+      - main
     subKeyValues:
     - Values:
       - name: HEAD
         remote:
           name: origin
-          url: git@github.com:LeSelyo/Projet-ReadForce.git
+          url: https://github.com/LeSelyo/Projet-ReadForce.git
+        trackingBranch: 
+      - name: main
+        remote:
+          name: origin
+          url: https://github.com/LeSelyo/Projet-ReadForce.git
         trackingBranch: 
   configRemotes:
     keys:
     - origin
     values:
     - name: origin
-      url: git@github.com:LeSelyo/Projet-ReadForce.git
+      url: https://github.com/LeSelyo/Projet-ReadForce.git

@@ -5,12 +5,16 @@ using Assets.Scripts.TapTapAim;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using HitCircle = Assets.Scripts.TapTapAim.HitCircle;
+using UnityEngine.InputSystem;
 
 namespace Assets.Scripts
 {
     public class MouseCursor : MonoBehaviour
     {
+         // Assurez-vous de définir votre curseur ici dans l'inspecteur Unity
+        [SerializeField] private PlayerInput playerInput = null;
         public float Speed = 0.6f;
+        public static float Sensitivity = 1;
         float t;
         Vector3 startPosition;
         Vector3 target;
@@ -20,18 +24,27 @@ namespace Assets.Scripts
         public bool IsGame { get; set; }
         private float Radius { get; set; }
         private IInteractable currentTarget { get; set; }
-        // Start is called before the first frame update
+        private InputAction activateAction { get; set; }
+        private InputAction activateAction2 { get; set; }
+
+        public PlayerInput PlayerInput => playerInput;
+
         void Start()
         {
+
+            Cursor.lockState = CursorLockMode.Confined;
+            activateAction = PlayerInput.actions.FindAction("Activate");
+            activateAction2 = PlayerInput.actions.FindAction("Activate2");
             Cursor.visible = false;
             OnObject = null;
-            startPosition = new Vector3(0, 0, 0);
+            startPosition = new Vector3(0,0, 0);
             IsGame = SceneManager.GetActiveScene().name == "TapTapAim";
             if (IsGame)
             {
                 tapTapAimSetup = GameObject.Find("Tracker").transform.GetComponent<TapTapAimSetup>();
                 Radius = transform.GetComponent<CircleCollider2D>().radius;
             }
+            Debug.Log(IsGame);
 
 
         }
@@ -39,7 +52,6 @@ namespace Assets.Scripts
         // Update is called once per frame
         void Update()
         {
-            Debug.Log(IsGame);
             if (IsGame)
             {
                 if (!(tapTapAimSetup.Tracker.NextObjToHit < tapTapAimSetup.ObjectInteractQueue.Count()))
@@ -65,22 +77,28 @@ namespace Assets.Scripts
                     t += Time.deltaTime / (float)timeToReachTarget;
                     transform.position = Vector3.Lerp(startPosition, target, t);
                 }
-                else
+                /*else
                 {
-                    float mouseSpeed = 2f;
-                    float mouseX = Input.GetAxis("Mouse X");
-                    float mouseY = Input.GetAxis("Mouse Y");
+                    Vector2 mouseMovement = PlayerInput.actions["Mouse"].ReadValue<Vector2>();
 
-                    mouseX *= mouseSpeed;
-                    mouseY *= mouseSpeed;
+                    float mouseX = mouseMovement.x * Sensitivity * Time.deltaTime;
+                    float mouseY = mouseMovement.y * Sensitivity * Time.deltaTime;
 
                     Vector3 newPosition = new Vector3(mouseX, mouseY, 0f);
-                    transform.position += newPosition;/*
-                    Vector3 mouse_pos = Input.mousePosition;
-                    //Debug.Log(mouse_pos);
-                    transform.position = new Vector3(mouse_pos.x - Screen.width / 2, mouse_pos.y - Screen.height / 2, (float)0.01);
-                    //transform.position = Input.mousePosition;
-                    //Debug.Log(transform.position);*/
+                    transform.position += newPosition;
+                    Debug.Log(transform.position);
+                }*/
+                else
+                {
+                    Vector2 mouseMovement = PlayerInput.actions["Mouse"].ReadValue<Vector2>();
+
+                    // Multipliez par la sensibilité pour contrôler la vitesse de mouvement du curseur
+                    float mouseX = mouseMovement.x * Sensitivity * Time.deltaTime;
+                    float mouseY = mouseMovement.y * Sensitivity * Time.deltaTime;
+
+                    Vector3 newPosition = new Vector3(mouseX, mouseY, 0f);
+                    transform.position += newPosition;
+                    Debug.Log(transform.position);
                 }
 
                 RayCast();
@@ -90,7 +108,6 @@ namespace Assets.Scripts
                 transform.position = Input.mousePosition;
                 //Debug.Log(transform.position);
             }
-
             transform.Rotate(Vector3.forward * -1000 * Time.deltaTime);
 
             //Debug.DrawLine(transform.position, transform.forward);
@@ -145,16 +162,16 @@ namespace Assets.Scripts
                                     {
                                         Debug.LogWarning("Try interact: " + sliderPositionRing.name);
                                         sliderPositionRing.TryInteract();
-                                        //GameObject.FindWithTag("TapCounter").GetComponent<TapTicker>().IncrementButton(1);
                                     }
 
                                     break;
                                 }
                         }
 
-                    } else
+                    }
+                    else
                     {
-                        if (Input.GetMouseButtonDown(0)) // Vérifie si l'utilisateur a cliqué sur le bouton gauche de la souris
+                        if (activateAction.triggered || activateAction2.triggered)
                         {
                             switch (interactable)
                             {

@@ -34,6 +34,7 @@ public class NetworkTransmission : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     public void AddMeToDictionaryServerRPC(ulong _steamId,string _steamName, ulong _clientId)
     {
+        Debug.Log("RPC");
         GameManager.instance.SendMessageToChat($"{_steamName} has joined", _clientId, true);
         GameManager.instance.AddPlayerToDictionary(_clientId, _steamName, _steamId);
         GameManager.instance.UpdateClients();

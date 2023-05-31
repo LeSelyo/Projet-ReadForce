@@ -5,12 +5,17 @@ using System.Linq;
 using Assets.TapTapAim;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 using Debug = UnityEngine.Debug;
+using System.Collections;
 
 namespace Assets.Scripts.TapTapAim
 {
     public class Tracker : MonoBehaviour, ITracker
     {
+
+        [SerializeField] private GameObject ScoreFinal, BestCombo;
+        [SerializeField] private GameObject ZoneScore,ZoneCombo;
         private int nextObjectID { get; set; }
         private bool SkippedToStart;
         public TapTapAimSetup TapTapAimSetup { get; set; }
@@ -19,6 +24,8 @@ namespace Assets.Scripts.TapTapAim
         private float HealthDrain { get; } = 5;
         private float HealthDamage { get; } = 20;
         public float HealthAddedPerHit { get; } = 7;
+
+        
         public float HitAccuracy { get; private set; }
         public List<TimeSpan> BreakPeriodQueue { get; private set; } = new List<TimeSpan>();
         public double StartOffsetMs { get; set; }
@@ -45,42 +52,76 @@ namespace Assets.Scripts.TapTapAim
 
         private void Update()
         {
-            if (!IsGameReady)
-                return;
-            try
+            if (!GameFinished)
             {
-                if (NextObjToActivateID < TapTapAimSetup.ObjActivationQueue.Count)
-                    IterateObjectQueue();
-            }
-            catch (Exception e)
-            {
-                Debug.LogError(e);
-            }
+                if (!IsGameReady)
+                    return;
+                try
+                {
+                    if (NextObjToActivateID < TapTapAimSetup.ObjActivationQueue.Count)
+                        IterateObjectQueue();
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError(e);
+                }
 
-            try
-            {
-                //if (NextObjToHit < TapTapAimSetup.ObjectInteractQueue.Count)
+                try
+                {
+                    //if (NextObjToHit < TapTapAimSetup.ObjectInteractQueue.Count)
                     //IterateInteractionQueue();
-            }
-            catch (Exception e)
-            {
-                Debug.LogError(e);
-            }
-            if (IsGameReady && UseMusicTimeline && !GameFinished)
-            {
-                if (!TapTapAimSetup.MusicSource.isPlaying)
-                    TapTapAimSetup.MusicSource.Play();
-                HandleHealth();
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError(e);
+                }
+                if (IsGameReady && UseMusicTimeline && !GameFinished)
+                {
+                    if (!TapTapAimSetup.MusicSource.isPlaying)
+                        TapTapAimSetup.MusicSource.Play();
+                    HandleHealth();
+                }
+                else
+                {
+                    GetTimeInMs();
+                }
+                CalculateAccuracy();
             }
             else
             {
-                GetTimeInMs();
+                GameObject EndScreen = GameObject.FindGameObjectWithTag("EndScreen");
+
+                if (!EndScreen.active)
+                {
+                    EndScreenDisplay();
+                }
+                else
+                    return;
+
+
             }
 
-            CalculateAccuracy();
 
+
+           
             if (Input.GetKey(KeyCode.Escape))
-                SceneManager.LoadScene("MapSelect");
+            {
+                Debug.Log("ahh");
+                if( GameObject.Find("Token") != null)
+                {
+                    StartCoroutine(LoadSceneAndCallFunctionCoroutine());/*
+                    GameManager otherScript = GameObject.Find("GameManager").GetComponent<GameManager>();
+                    if (otherScript != null)
+                    {
+                        otherScript.Disconnected();
+                    }
+                    SceneManager.LoadScene("multijoueurs");*/
+
+                }
+                
+                else
+                    SceneManager.LoadScene("MapSelect");
+            }
             else if (Input.GetKey(KeyCode.Space))
                 if ((TapTapAimSetup.MusicSource.time * 1000) - 5000 <
                     TapTapAimSetup.ObjectInteractQueue[0].Visibility.VisibleStartStartTimeInMs && !SkippedToStart)
@@ -90,7 +131,50 @@ namespace Assets.Scripts.TapTapAim
                 }
 
         }
+        private IEnumerator LoadSceneAndCallFunctionCoroutine()
+        {
+            // Charge la scène de manière asynchrone
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("multijoueurs");
 
+            // Attendez que la scène soit complètement chargée
+            while (!asyncLoad.isDone)
+            {
+                yield return null;
+            }
+
+            // La nouvelle scène est chargée, recherchez le script et appelez la fonction
+            GameManager otherScript = GameObject.Find("GameManager").GetComponent<GameManager>();
+            if (otherScript != null)
+            {
+                otherScript.Disconnected();
+            }
+        }
+        public class Message
+        {
+            public string text;
+            public TMP_Text textObject;
+        }
+
+        private void EndScreenDisplay()
+        {
+            GameObject EndScreen = GameObject.FindGameObjectWithTag("EndScreen");
+            GameObject ScreenGame = GameObject.FindGameObjectWithTag("ScreenGame");
+            ScreenGame.SetActive(false);
+            EndScreen.SetActive(true);
+            Message Scores = new Message();
+            Message Combot = new Message();
+
+
+            Scores.text = "Best Score " + ": " + Score;
+            GameObject Scorest = Instantiate(ScoreFinal, ZoneScore.transform);
+            Scores.textObject = Scorest.GetComponent<TMP_Text>();
+            Scores.textObject.text = Scores.text;
+
+            Combot.text = "Best Combo " + ": " + Combo;
+            GameObject Combost = Instantiate(ScoreFinal, ZoneCombo.transform);
+            Combot.textObject = Combost.GetComponent<TMP_Text>();
+            Combot.textObject.text = Combot.text;
+        }
         private void CalculateAccuracy()
         {
             try

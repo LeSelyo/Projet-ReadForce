@@ -31,8 +31,9 @@ public class GameNetworkManager : MonoBehaviour
     private void Start()
     {
         transport = GetComponent<FacepunchTransport>();
-
+        Debug.Log("start gamenetworkmanager");
         SteamMatchmaking.OnLobbyCreated += SteamMatchmaking_OnLobbyCreated;
+        Debug.Log("start SteamMatchmaking_OnLobbyCreated");
         SteamMatchmaking.OnLobbyEntered += SteamMatchmaking_OnLobbyEntered;
         SteamMatchmaking.OnLobbyMemberJoined += SteamMatchmaking_OnLobbyMemberJoined;
         SteamMatchmaking.OnLobbyMemberLeave += SteamMatchmaking_OnLobbyMemberLeave;
@@ -120,6 +121,7 @@ public class GameNetworkManager : MonoBehaviour
 
     private void SteamMatchmaking_OnLobbyCreated(Result _result, Lobby _lobby)
     {
+        Debug.Log("RPC");
         if(_result != Result.OK)
         {
             Debug.Log("lobby was not created");
@@ -129,7 +131,7 @@ public class GameNetworkManager : MonoBehaviour
         _lobby.SetJoinable(true);
         _lobby.SetGameServer(_lobby.Owner.Id);
         Debug.Log($"lobby created FakeSteamName");
-        NetworkTransmission.instance.AddMeToDictionaryServerRPC(SteamClient.SteamId, "FakeSteamName", NetworkManager.Singleton.LocalClientId); //
+        NetworkTransmission.instance.AddMeToDictionaryServerRPC(SteamClient.SteamId, $"{currentLobby.Value.Owner.Name}", NetworkManager.Singleton.LocalClientId); //
     }
 
     public async void StartHost(int _maxMembers)
